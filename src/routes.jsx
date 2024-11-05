@@ -2,8 +2,9 @@
 import { Routes, Route } from 'react-router-dom';
 import SelectTable from './selecionarmesa/mesas';
 import NaoEncontrada from './404';
-import Cardapio from './teladocardapio/cardapio'
+import Cardapio from './cardapio/cardapio'
 import AddDish from './balconista/adicionarpratos'
+
 
 function AppRoutes() {
   return (
@@ -11,7 +12,9 @@ function AppRoutes() {
       <Route path="/" element={<SelectTable />} />
       <Route path="*" element={<NaoEncontrada />} />
       <Route path="/cardapio" element={<Cardapio />} />
-      <Route path="/pratos" element={<AddDish />} />
+      <Route path="/adicionarpratos" element={<AddDish />} />
+
+
     </Routes>
   );
 }
